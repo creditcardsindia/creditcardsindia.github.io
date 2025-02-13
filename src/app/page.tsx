@@ -11,7 +11,7 @@ export default function Home() {
   };
 
   return (
-    <div className="bg-gray-50 font-sans text-gray-900">
+    <div className="bg-gray-50 text-justify font-sans text-gray-900">
       <nav className="bg-blue-600 text-white py-4 fixed w-full px-4 z-10 top-0 shadow-lg">
         <div className="container mx-auto flex justify-between items-center">
           <h1 className="text-2xl font-bold">Credit Cards India</h1>
@@ -41,7 +41,7 @@ export default function Home() {
             <Link href="#blog" className="hover:text-blue-300">Blogs</Link>
           </div>
         </div>
-        <div className={`md:hidden ${isOpen ? 'fixed inset-0 bg-blue-600 bg-opacity-90' : 'hidden'} transition-all duration-300`}>
+        <div className={`md:hidden ${isOpen ? 'fixed inset-0 bg-blue-600 flex flex-col items-center' : 'hidden'} transition-all duration-300`}>
           <div className="flex justify-end p-4">
             <button onClick={toggleMenu} className="text-white text-3xl">
               &times;
@@ -59,8 +59,8 @@ export default function Home() {
       <section id="home" className="h-screen p-4 flex items-center justify-center bg-gray-100 text-center">
         <div>
           <h2 className="text-4xl font-bold text-gray-800">Welcome to Credit Cards India</h2>
-          <p className="mt-4 text-lg text-gray-600">An open-source platform dedicated to helping users in India manage and explore their credit card benefits.</p>
-          <div className="mt-8 space-x-4">
+          <p className="mt-4  text-lg text-gray-600">An open-source platform dedicated to helping users in India manage and explore their credit card benefits.</p>
+          <div className="mt-8 space-x-4 flex justify-center">
             <Link href="#projects" className="text-white bg-blue-600 px-6 py-2 rounded-lg hover:bg-blue-700">Explore Projects</Link>
             <Link href="#about" className="text-blue-600 px-6 py-2 border-2 border-blue-600 rounded-lg hover:bg-blue-600 hover:text-white">Learn More</Link>
           </div>
@@ -70,7 +70,7 @@ export default function Home() {
       <section id="about" className="h-screen flex flex-col lg:flex-row justify-center items-center bg-gray-200 text-center lg:text-left px-6 py-12">
         <div className="lg:w-1/2 p-4 text-center lg:text-left">
           <h2 className="text-4xl font-semibold text-gray-800">About Credit Cards India</h2>
-          <p className="mt-4 text-lg text-gray-700 max-w-3xl mx-auto lg:mx-0">
+          <p className="mt-4 text-justify text-lg text-gray-700 max-w-3xl mx-auto lg:mx-0">
             Credit Cards India is a community-driven open-source initiative to help users in India make informed financial decisions by providing tools to manage and track credit card benefits. Our mission is to optimize credit card usage and financial health.
           </p>
         </div>
